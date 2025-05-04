@@ -1,1 +1,13 @@
-spring.application.name=global-config 
+
+spring:
+  application:
+    name: global-config
+
+logging:
+  level:
+    root: INFO
+
+eureka:
+  client:
+    register-with-eureka: true
+    fetch-registry: true
