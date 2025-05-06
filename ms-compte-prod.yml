@@ -5,7 +5,7 @@ spring:
   application:
     name: ms-compte
   datasource:
-    url: jdbc:mysql://<localhost>:3306/compte_prod_db
+    url: jdbc:mysql://localhost:3306/compte_prod_db
     username: prod_user
     password: prod_password
   jpa:
