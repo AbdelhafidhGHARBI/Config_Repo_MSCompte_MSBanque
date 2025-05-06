@@ -1,1 +1,25 @@
+server:
+  port: 9090
+
+spring:
+  application:
+    name: ms-compte
+  datasource:
+    url: jdbc:mysql://<host>:3306/compte_prod_db
+    username: prod_user
+    password: prod_password
+  jpa:
+    hibernate:
+      ddl-auto: validate
+    show-sql: false
+    properties:
+      hibernate:
+        format_sql: false
+  config:
+    activate:
+      on-profile: prod
+
+logging:
+  level:
+    root: WARN
 
